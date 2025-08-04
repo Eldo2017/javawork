@@ -12,5 +12,7 @@ public class T02_println_String {
 		System.out.println("연산 결과 : " + 4 + 4);
 		// 문자열 뒤에 + 기호로 넣으면 뒤에는 숫자로 인식을 원한다면 뒤에 소괄호()로 묶으면 된다
 		System.out.println("연산 결과 : " + (6 + 6));
+		// +, -를 제외한 다른 연산자는 무관
+		System.out.println("연산 결과 : " + 7 * 4);
 	}
 }
