@@ -2,12 +2,10 @@ package _02_Scanner;
 
 import java.util.Scanner;
 
-public class T02_Ex01 {
+public class T05_Ex02 {
 
 	public static void main(String[] args) {
-		// 국어, 컴퓨터, 수학, 점수를 입력을 받아서 저장 후
-		// 합계 점수 및 평균 점수를 출력하라
-		
+		// 예제 01의 평균값을 소수점 형식으로 수정하라
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("국어 : ");
@@ -24,7 +22,7 @@ public class T02_Ex01 {
 		System.out.println("세 과목 총점 : " + sum);
 		
 		double avg = sum / 3;
-		System.out.println("세 과목 평균 : " + avg);
+		System.out.printf("세 과목 평균 : %.2f", avg);
 	}
 
 }
