@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class T09_Ex04 {
 
 	public static void main(String[] args) {
-		// 사용자로부터 나이를 입력받아 13세이하이면 어린이
+		// 6. 사용자로부터 나이를 입력받아 13세이하이면 어린이
 	    // 14세~19세 이하이면 청소년
 	    // 20세 이상이면 성인으로 출력
 		Scanner sc = new Scanner(System.in);
@@ -24,13 +24,14 @@ public class T09_Ex04 {
 		int eng = sc.nextInt();
 		int math = sc.nextInt();
 		
-		int avg = (kor + eng + math) / 3;
+		double avg = (kor + eng + math) / 3.0;
+		System.out.println(avg);
 		String answer2 = ((kor >= 40) && (eng >= 40) && (math >= 40)) && avg >= 60 ? "합격" : "불합격";
 		
 		System.out.println(answer2);
 		
 		// 8. 주민번호를 입력받아 남자인지 여자인지 출력
-		System.out.print("주민번호 : ");
+		System.out.print("주민번호(- 포함) : ");
 		String Resnum = sc.next();
 		int gendernum = Resnum.charAt(7);
 		
