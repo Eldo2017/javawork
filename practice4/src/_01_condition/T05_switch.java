@@ -134,5 +134,21 @@ public class T05_switch {
 			System.out.println("연산이 잘못됐다.");
 			break;
 		}
+		
+		System.out.println("=========================");
+		
+		if(op == '+')
+			System.out.println("두 수를 더한 값 : " + (x + y));
+		else if(op == '-')
+			System.out.println("두 수를 뺀 값 : " + (x - y));
+		else if(op == '*')
+			System.out.println("두 수를 곱한 값 : " + (x * y));
+		else if(op == '/')
+			System.out.println("두 수를 나눈 몫 : " + (x / y));
+		else if(op == '%')
+			System.out.println("두 수를 나눈 나머지 : " + (x % y));
+		else {
+			System.out.println("연산이 잘못됐다.");
+		}
 	}
 }
