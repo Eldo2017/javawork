@@ -73,6 +73,7 @@ public class T09_Ex01 {
 		
 		double BMI = weight / (height2 * height2);
 		
+		System.out.println("당신의 체중 BMI : " + BMI);
 		if(BMI < 18.5) System.out.println("저체중");
 		else if(BMI >= 18.5 && BMI < 23) System.out.println("정상체중");
 		else if(BMI >= 23 && BMI < 25) System.out.println("과체중");
@@ -111,22 +112,24 @@ public class T09_Ex01 {
 		System.out.println("=============== 결과 ================");
 		double final_mid = (double)midterm * 0.2; // 100점 만점에 20점 만점
 		double final_fin = (double)finterm * 0.3; // 100점 만점에 30점 만점
-		double final_task = (double)task * 0.3 * 0.3; // 100점 만점에 30점 만점
-		double final_attd = (double)attendence * 0.1; // 20회 만점에 1회당 1점 누적
-		
-		System.out.println("중간고사 점수(20) : " + final_mid);
-		System.out.println("기말고사 점수(30) : " + final_fin);
-		System.out.println("과제 점수(30) : " + final_task);
-		System.out.println("출석 점수(20) : " + final_attd);
+		double final_task = (double)task * 0.3; // 100점 만점에 30점 만점
+		double final_attd = (double)attendence; // 20회 만점에 1회당 1점 누적
 		
 		double total = final_mid + final_fin + final_task + final_attd;
 		
-		System.out.println("총점 : " + total);
+		
 		
 		if(attendence < 14) System.out.print("Fail [출석 횟수 부족(" + attendence +"/20)]");
-		
-		else if(total < 70) System.out.println("Fail [점수 미달]");
-		
-		else System.out.println("Pass");
+		else {
+			System.out.printf("중간고사 점수(20) : %.1f\n", final_mid);
+			System.out.printf("기말고사 점수(30) : %.1f\n", final_fin);
+			System.out.printf("과제 점수(30) : %.1f\n",  final_task);
+			System.out.printf("출석 점수(20) : %d\n", final_attd);
+			
+			System.out.printf("총점 : %.1f" , total);
+			if(total < 70) System.out.println("Fail [점수 미달]");
+			
+			else System.out.println("Pass");
+		}
 	}
 }

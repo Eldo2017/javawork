@@ -8,17 +8,19 @@ public class T10_Ex02 {
 		// 1.  주사위의 숫자 맞추기 게임
 		Scanner sc = new Scanner(System.in);
 		
+		// 랜덤으로 주사위숫자(1~6숫자 중 1개) 만들기
+		int dicenum = (int)(Math.random()*6)+1;
+		
 		while(true) {
-			// 랜덤으로 주사위숫자(1~6숫자 중 1개) 만들기
-			int dicenum = (int)(Math.random()*6)+1;
-			
 			System.out.print("주사위의 숫자는? ");
 			int answer = sc.nextInt(); //사용자로 부터 숫자 입력받기 (1~6까지만)
 			if(answer == dicenum) {
 				System.out.println("축하합니다, 맞혔습니다~!");
 				break;
 			}
-			else continue;
+			else {
+				System.out.println("다시 입력하세요.");
+			}
 		}
 		
 		System.out.println("-------------------------------");
