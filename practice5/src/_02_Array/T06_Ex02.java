@@ -61,24 +61,27 @@ public class T06_Ex02 {
 		System.out.print("문자열을 입력하라 : ");
 		String input2 = input.next();
 		
-		char e[] = input2.toCharArray();
+		char e[] = new char[input2.length()];
 		
 		System.out.print("문자를 입력하라 : ");
 		char f = input.next().charAt(0);
 		
 		int count=0;
-		System.out.printf("%s에 %c가 존재하는 위치(인덱스) : ", input2, f);
+
+		String idx = "";
 		
-		for(int l=0;l<e.length;l++) {
-			if(f == e[l]) {
-				System.out.print(l + " ");
+		for(int i=0;i<input2.length();i++) {
+			e[i]=input2.charAt(i);
+			if(e[i]== f) {
 				count++;
+				idx += i + " ";
 			}
 		}
-
-		System.out.println();
-		System.out.println(f + " 개수 : " + count);
 		
+		System.out.println("문자열 : " + input2);
+		System.out.println("찾을 문자 : " + f);
+		System.out.println(input2 + "에 " + f + "가 존재하는 위치(인덱스) : " + idx);
+		System.out.println(f + "의 개수 : " + count);
 		/*
 		 * 6. 배열에 요일(월,화,수,목,금,토,일)을 초기화하여 넣고 
 		 * 사용자로 부터 0~6사이의 숫자를 입력받아 숫자와 같은 요일 출력 
@@ -92,9 +95,9 @@ public class T06_Ex02 {
 		char week[]= {'월','화','수','목','금','토','일'};
 		
 		System.out.print("0 ~ 6 사이의 숫자를 입력하라 : ");
-		int idx = input.nextInt();
+		int idx2 = input.nextInt();
 
-		if(idx>=0 && idx<=6) System.out.println(week[idx]+"요일");
+		if(idx2>=0 && idx2<=6) System.out.println(week[idx2]+"요일");
 		else System.out.println("잘못 입력하셨습니다.");
 	}
 
