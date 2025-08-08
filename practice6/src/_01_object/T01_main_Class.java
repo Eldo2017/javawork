@@ -22,6 +22,14 @@ public class T01_main_Class {
 		ob2.name = "미와";
 		
 		System.out.println("두 번째 객체의 이름 : " + ob2.name);
+		
+		T02_api_Class ob3 = new T02_api_Class();
+		System.out.println("첫 번째 객체의 나이 : " + ob3.age);
+		System.out.println("첫 번째 객체의 주소 : " + ob3.address);
+		
+		ob3.address = "서울시 서대문구";
+		
+		System.out.println("첫 번째 객체의 주소 : " + ob3.address);
 	}
 
 }
