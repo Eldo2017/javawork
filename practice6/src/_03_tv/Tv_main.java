@@ -3,7 +3,6 @@ package _03_tv;
 public class Tv_main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Tv ob1 = new Tv();
 		
 		System.out.println("회사명 : " + ob1.company);

@@ -3,7 +3,7 @@ package _04_overloading;
 public class T02_Ex_overOp1 {
 	// -, *, /
 	
-	int num = 1;
+	int num = 2;
 	
 	// 매개변수 없는 거, 1개, 2개
 	int sub() {
@@ -11,7 +11,7 @@ public class T02_Ex_overOp1 {
 	}
 	
 	int sub(int a) {
-		return a;
+		return a - num;
 	}
 	
 	int sub(int a, int b) {
@@ -23,11 +23,11 @@ public class T02_Ex_overOp1 {
 	}
 	
 	int mul() {
-		return num;
+		return num*7;
 	}
 	
 	int mul(int c) {
-		return c;
+		return c * num;
 	}
 	
 	int mul(int c, int d) {
@@ -43,7 +43,7 @@ public class T02_Ex_overOp1 {
 	}
 	
 	int div(int e) {
-		return e;
+		return e / num;
 	}
 	
 	int div(int e, int f) {

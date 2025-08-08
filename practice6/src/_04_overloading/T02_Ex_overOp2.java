@@ -20,7 +20,7 @@ public class T02_Ex_overOp2 {
 		System.out.println("--------------------------");
 		
 		System.out.println(over.div());
-		System.out.println(over.div(2));
+		System.out.println(over.div(14));
 		System.out.println(over.div(16, 4));
 	}
 
