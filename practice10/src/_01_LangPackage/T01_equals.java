@@ -1,4 +1,4 @@
-package _01_langPackage;
+package _01_LangPackage;
 
 class Value extends Object{
 	int value;

@@ -1,4 +1,4 @@
-package _01_langPackage;
+package _01_LangPackage;
 
 import java.util.Objects;
 

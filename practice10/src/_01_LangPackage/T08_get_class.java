@@ -1,4 +1,4 @@
-package _01_langPackage;
+package _01_LangPackage;
 
 class Card2 {
 	String kind;

@@ -1,4 +1,4 @@
-package _01_langPackage;
+package _01_LangPackage;
 
 class A {
 	int num = 4;

@@ -1,4 +1,4 @@
-package _02_String_method;
+package _02_String_Method;
 
 
 public class T01_charArray {
