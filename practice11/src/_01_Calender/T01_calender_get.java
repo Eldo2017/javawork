@@ -62,5 +62,8 @@ public class T01_calender_get {
 		else if(ampm == 1) System.out.println("오후 " + today.get(Calendar.HOUR) + "시 (PM)");
 		
 		System.out.println("---------------------------");
+		
+		System.out.println(today.get(Calendar.HOUR) + "시 " 
+		+ today.get(Calendar.MINUTE) + "분 " + today.get(Calendar.SECOND) + "초");
 	}
 }
