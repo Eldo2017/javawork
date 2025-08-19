@@ -58,8 +58,8 @@ public class T01_calender_get {
 		System.out.println(ampm); //0이면 오전(AM), 1이면 오후(PM)
 		
 		System.out.println("---------------------------");
-		if(ampm == 0) System.out.println("오전 " + today.get(Calendar.HOUR) + "시");
-		else if(ampm == 1) System.out.println("오후 " + today.get(Calendar.HOUR) + "시");
+		if(ampm == 0) System.out.println("오전 " + today.get(Calendar.HOUR) + "시 (AM)");
+		else if(ampm == 1) System.out.println("오후 " + today.get(Calendar.HOUR) + "시 (PM)");
 		
 		System.out.println("---------------------------");
 	}
