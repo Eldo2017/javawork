@@ -17,8 +17,8 @@ public class T01_TreeMap1 {
 		treeMap.put("김두한", 39);
 		treeMap.put("김영태", 45);
 		
-		System.out.println("[김씨와 신씨 사이의 단어 검색]");
-		NavigableMap<String, Integer> rangeMap = treeMap.subMap("김", true, "신", true);
+		System.out.println("[김씨와 심씨 사이의 단어 검색]");
+		NavigableMap<String, Integer> rangeMap = treeMap.subMap("김", true, "심", true);
 		for(Map.Entry<String,Integer> entry : rangeMap.entrySet()) 
 			System.out.println(entry.getKey() + " - " + entry.getValue() + "살");
 	}

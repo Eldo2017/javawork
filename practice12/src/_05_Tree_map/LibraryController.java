@@ -20,6 +20,7 @@ public class LibraryController {
 	public void insertBook() {
 		aList.add(new Book("명탐정코난","아오야마 고쇼","쇼가쿠칸"));
 		aList.add(new Book("소년탐정 김전일","아마기 세이마","코단샤"));
+		aList.add(new Book("야인시대","이환경","SBS프로덕션"));
 	}
 	
 	// 외부에서 받은 책을 리스트에 넣기
