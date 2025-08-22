@@ -52,7 +52,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "제목 : " + title + " / 저자 : " + author + " / 범주 : " + category + "/ 가격 : " + price;
+		return "제목 : " + title + " / 저자 : " + author + " / 범주 : " + category + " / 가격 : " + price;
 	}
 
 	// 가격으로 해시코드 설정
@@ -68,7 +68,9 @@ public class Book {
 		if (obj == null) return false;
 		if (getClass() != obj.getClass()) return false;
 		Book other = (Book) obj;
-		return this.price == other.price;
+		// return this.price == other.price;
+		// 제목, 저자가 같다는 가정이면
+		return other.price == price;
 	}
 	
 	// compareTo : 제목 오름차순 정렬

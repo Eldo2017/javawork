@@ -27,6 +27,7 @@ public class BookRun {
 			
 			switch(num) {
 			case 1: // 새 도서 추가
+				System.out.println("=== 도서 추가 ===");
 				System.out.print("제목 : ");
 				String title = input.nextLine();
 				System.out.print("저자 : ");
@@ -46,7 +47,7 @@ public class BookRun {
 				
 				controller.insertBook(new Book(title, author, category, price));
 				System.out.println("도서가 추가되었습니다.");
-				
+				System.out.println("-------------------");
 				break;
 				
 			case 2: // 전체 도서 조회
@@ -103,6 +104,9 @@ public class BookRun {
 				System.out.println("프로그램을 종료합니다.");
 				input.close();
 				return;
+				
+			default:
+				System.out.println("잘못 입력했습니다. 다시 입력하세요.");
 			}
 		}
 	}

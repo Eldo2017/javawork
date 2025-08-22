@@ -10,8 +10,8 @@ public class LibraryController {
 	public LibraryController() {
 		list = new ArrayList<>();
 		list.add(new Book("엘도라도","글리온","소설",55000));
-		list.add(new Book("파멸의 책","바하트","소설",32000));
-		list.add(new Book("암흑의 여우","메라","소설",21000));
+		list.add(new Book("사상에 대한 집념","바하트","사회",32000));
+		list.add(new Book("AI의 정석","히덴 아루토","IT/컴퓨터",21000));
 	}
 	
 	//책 추가
