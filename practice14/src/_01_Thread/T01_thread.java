@@ -24,9 +24,12 @@ public class T01_thread {
 		Thread x1 = new Thread1();
 		x1.start();
 		
-		Runnable a = new Thread2();
-		Thread x2 = new Thread(a);
 		
+		Runnable a = new Thread2();
+		Thread x2 = new Thread(a); // 생성자 Thread(Runnable Target)
+		
+		
+		// Thread x2 = new Thread(new Thread2()); -> 이렇게도 가능
 		x2.start();
 	}
 }
